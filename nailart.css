@@ -1,0 +1,22 @@
+#header {
+    background-color: #e73cdf;
+  }
+  .bg-primary {
+    background-color: #e73cdf !important;
+  }
+  
+  .btn {
+    background-color: #f926f9;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #cc35c4;
+  }
+  

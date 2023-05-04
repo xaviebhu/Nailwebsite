@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nail Salon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="pexels-ari-roberts-9393229.jpg">
+        </div>
+        <div class="slide fade">
+          <img src="pexels-cottonbro-studio-3997359.jpg">
+        </div>
+        <div class="slide fade">
+          <img src="pexels-cottonbro-studio-3997377.jpg">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div class="header-text">
+        <h1>Nail Salon</h1>
+        <p>Look and feel your best with our professional nail services</p>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+              <img src="Gallery/pexels-cottonbro-studio-3997381.jpg">
+              <img src="Gallery/pexels-valeria-boltneva-939836.jpg">
+              <img src="Gallery/pexels-jess-bailey-designs-791157.jpg">
+              <img src="Gallery/pexels-lisa-fotios-851219.jpg">
+              <img src="Gallery/pexels-reynaldo-yodia-14419065.jpg">
+              <img src="Gallery/pexels-stephanie-ho-994173.jpg">
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+              <h2>Our Services</h2>
+              <div class="row">
+                <div class="col-sm-4">
+                  <a href="manicure.html">
+                    <div class="service-box">
+                      <img src="Gallery/services/pexels-solodsha-7664093.jpg" alt="Manicure">
+                      <h3>Manicures</h3>
+                      <p>Pamper your hands with our range of manicure services</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="pedicure.html">
+                    <div class="service-box">
+                      <img src="Gallery/services/pexels-анастасия-войтко-13059141.jpg" alt="Pedicure">
+                      <h3>Pedicures</h3>
+                      <p>Relax your feet with our range of pedicure services</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="nailart.html">
+                    <div class="service-box">
+                      <img src="Gallery/services/pexels-cottonbro-studio-4813347.jpg" alt="Nail Art">
+                      <h3>Nail Art</h3>
+                      <p>Express yourself with our unique nail art designs</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+      <section id="about" style="background-color: #ffe6f7; padding: 50px 0;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="Gallery/services/pexels-cottonbro-studio-3997357.jpg" alt="Nail salon interior" style="width: 100%;">
+      </div>
+      <div class="col-md-6">
+        <h2 style="color: #ff6b81;">About Us</h2>
+        <p style="font-size: 18px; line-height: 1.5; color: #333;">We are a team of professional nail technicians dedicated to providing high-quality nail services to our clients. Our salon is designed to create a relaxing and comfortable atmosphere where you can unwind and pamper yourself.</p>
+        <a href="team.html" style="background-color: #ff6b81; color: #fff; padding: 10px 20px; text-decoration: none; display: inline-block; margin-top: 20px;">Meet Our Team</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+  <style>
+    #contact {
+      background-color: #f7c0eb;
+      padding: 80px 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .form-group {
+      margin: 20px;
+      width: 300px;
+      position: relative;
+    }
+    .form-group label {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      color: #777;
+      transition: all 0.3s ease;
+    }
+    .form-group input,
+    .form-group textarea {
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid #777;
+      width: 100%;
+      font-size: 18px;
+      padding: 10px 0;
+      transition: all 0.3s ease;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-bottom-color: #eb5e28;
+    }
+    .form-group input:valid + label,
+    .form-group textarea:valid + label {
+      top: -10px;
+      left: 0;
+      font-size: 14px;
+      color: #eb5e28;
+    }
+    .btn-primary {
+      background-color: #ff5e5e;
+      color: #fff;
+      border: none;
+      font-size: 18px;
+      padding: 10px 30px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #fff;
+      color: #eb5e28;
+    }
+  </style>
+  
+  
+    </main>
+    <footer>
+      <p>&copy; 2023 Nail Salon. Designed by Xaviera Auguste</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
